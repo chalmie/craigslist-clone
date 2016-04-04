@@ -5,6 +5,6 @@
 
 <div class="container listings">
   {{#each model.listings as |listing|}}
-    <p>{{listing.posting_title}}-{{listing.price}}</p>
+    <p>{{#link-to 'listing' listing.id}}{{listing.posting_title}}-{{listing.price}}{{/link-to}}</p>
   {{/each}}
 </div>
