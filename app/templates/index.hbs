@@ -1,3 +1,9 @@
 <div class="header">
   <h1>Craigslist Clone</h1>
 </div>
+
+{{city-new saveCity="saveCity"}}
+
+{{#each model.cities as |city|}}
+  <p>{{#link-to 'city' city.id}}{{city.name}}{{/link-to}}</p>
+{{/each}}

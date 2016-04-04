@@ -4,6 +4,8 @@ module.exports = function(environment) {
   var ENV = {
     modulePrefix: 'c-list-clone',
     environment: environment,
+    contentSecurityPolicy: { 'connect-src': "'self' https://auth.firebase.com wss://*.firebaseio.com" },
+    firebase: 'https://c-list-clone.firebaseio.com/',
     baseURL: '/',
     locationType: 'auto',
     EmberENV: {
