@@ -7,5 +7,8 @@ export default DS.Model.extend({
   posting_title: DS.attr(),
   posting_body: DS.attr(),
   price: DS.attr('number'),
-  image: DS.attr()
+  image: DS.attr(),
+  posting_date: DS.attr('date', {
+    defaultValue() {return new Date(); }
+  })
 });
