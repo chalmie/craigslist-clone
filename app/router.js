@@ -9,7 +9,6 @@ Router.map(function() {
   this.route('about');
   this.route('contact');
   this.route('city', {path: '/city/:city_id'});
-  this.route('housing');
 });
 
 export default Router;

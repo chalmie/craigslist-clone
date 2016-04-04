@@ -1,0 +1,17 @@
+<div class="container">
+  {{#if addNewCategory}}
+     <form class="save-category">
+       <h1>New Category</h1>
+       <br>
+       <div class="form-group">
+         <label for="name">Name</label>
+         {{input value=name id="name"}}
+       </div>
+
+       <button class="btn btn-lg btn-save"{{action 'saveCategory' category}}>Save</button>
+     </form>
+
+   {{else}}
+      <button class="btn btn-lg btn-show"{{action 'categoryFormShow'}}>Add New Category</button>
+  {{/if}}
+</div>
