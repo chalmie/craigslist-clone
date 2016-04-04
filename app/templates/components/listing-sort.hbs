@@ -1,0 +1,7 @@
+
+
+<div class="container listings">
+  {{#each category.listings as |listing|}}
+    <p>{{#link-to 'listing' listing.id}}{{listing.posting_title}}-{{listing.price}}{{/link-to}}</p>
+  {{/each}}
+</div>
