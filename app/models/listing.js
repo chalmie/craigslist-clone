@@ -6,5 +6,5 @@ export default DS.Model.extend({
   phone: DS.attr(),
   posting_title: DS.attr(),
   posting_body: DS.attr(),
-  price: DS.attr('number')
+  price: DS.attr()
 });

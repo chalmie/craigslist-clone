@@ -1,1 +1,10 @@
 <h2>{{model.city.name}}/{{model.name}}</h2>
+
+{{listing-new saveListing="saveListing" category=model}}
+
+
+<div class="container listings">
+  {{#each model.listings as |listing|}}
+    <p>{{listing.posting_title}}-{{listing.price}}</p>
+  {{/each}}
+</div>
