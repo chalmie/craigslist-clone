@@ -4,6 +4,8 @@
 
 {{city-new saveCity="saveCity"}}
 
-{{#each model.cities as |city|}}
-  <p>{{#link-to 'city' city.id}}{{city.name}}{{/link-to}}</p>
-{{/each}}
+<div class="container cities">
+  {{#each model.cities as |city|}}
+    <p>{{#link-to 'city' city.id}}{{city.name}}{{/link-to}}</p>
+  {{/each}}
+</div>

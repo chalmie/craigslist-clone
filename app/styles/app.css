@@ -29,3 +29,15 @@ body {
   font-size: 150px;
   line-height: 220px;
 }
+
+.btn {
+  text-align: center;
+	background-color: black;
+	color: white;
+	border-color: white;
+}
+.btn-show:hover, .btn-show:focus, .btn-show:active, .btn-show.active, .open>.dropdown-toggle.btn-show {
+    color: black;
+    background-color: white;
+    border-color: black;
+}

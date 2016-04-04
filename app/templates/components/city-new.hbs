@@ -8,10 +8,10 @@
          {{input value=name id="name"}}
        </div>
 
-       <button class="btn btn-lg btn-info"{{action 'saveCity' city}}>Save</button>
+       <button class="btn btn-lg btn-save"{{action 'saveCity' city}}>Save</button>
      </form>
 
    {{else}}
-      <button class="btn btn-lg btn-info"{{action 'cityFormShow'}}>Add New City</button>
+      <button class="btn btn-lg btn-show"{{action 'cityFormShow'}}>Add New City</button>
   {{/if}}
 </div>
