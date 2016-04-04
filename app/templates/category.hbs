@@ -1,4 +1,9 @@
-<h2>{{model.city.name}}/{{model.name}}</h2>
+<h2>
+  {{#link-to 'city' model.city.id}}
+    {{model.city.name}}
+  {{/link-to}}/
+  {{model.name}}
+</h2>
 
 {{listing-new saveListing="saveListing" category=model}}
 
