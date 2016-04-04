@@ -1,4 +1,7 @@
-<h2>{{model.city}}</h2>
+<h2>{{model.name}}</h2>
 
-
-{{category-new saveCategory="saveCategory"}}
+<div class="container categories">
+  {{#each model.categories as |category|}}
+    <p>{{#link-to 'category' category.id}}{{category.name}}{{/link-to}}</p>
+  {{/each}}
+</div>
